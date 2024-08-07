@@ -1,0 +1,59 @@
+.casa {
+    margin-inline: 17%;
+    background-color: #444a54;
+    box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+table {
+    width: 80%;
+    margin-inline: 10%;
+}
+.dr{
+    float: right;
+    width: 300px;
+}
+.st{
+    float: left;
+    width: 200px;
+}
+.prez1 {
+    margin-inline: 5%;
+}
+.prezst {
+    margin-left: 100px;
+    margin-right: 300px;
+}
+.prezdr {
+    margin-right: 100px;
+    margin-left: 300px;
+}
+.hrst {
+    width: 50%;
+    margin-inline: 15%;
+}
+.hrdr {
+    width: 50%;
+    margin-inline: 35%
+}
+.hrst2 {
+    width: 50%;
+    
+}
+#calculator {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    
+  }
+  .calrez {
+    display: inline-flex;
+  }
+  .inputt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RoboHUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="rez.css">
+
+</head>
+
+<body>
+    <header class="head">
+        <a href="index.html"><img src="logo.png" height="300px" id="logo"></a>
+    </header>
+    <p></p>
+    <ul class="nav">
+        <li id="lis"><a class="active" href="index.html">Home</a></li>
+        <li id="lis"><a href="#news">News</a></li>
+        <li id="lis"><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">roboti</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+    </ul>
+</body>
+<div class="row">
+    <div class="column left" style="background-color:#aaa;">
+        <video width="620" height="540" controls>
+            <source src="rezistor.mp4" type="video/mp4">
+            </video>
+    </div>
+    <div class="column right" style="background-color:#aaa;">
+        <h><p>    Un rezistor este un component electronic pasiv proiectat să ofere o rezistență electrică specifică într-un circuit electric. Rezistența electrică măsoară dificultatea cu care curentul electric trece printr-un material. Rezistoarele sunt utilizate într-o varietate de circuite electronice pentru a controla curentul, a stabili tensiunea sau a diviza tensiunea în diferite părți ale unui circuit.
+
+            Rezistoarele sunt disponibile în diverse tipuri, forme și valori de rezistență. Ele sunt fabricate din diferite materiale, cum ar fi carbonul, metalul sau compuși ceramici, în funcție de aplicație și cerințele de performanță.
+            
+            Simbolul generic al unui rezistor în schematics este un dreptunghi sau un paralelogram cu o linie sau o săgeată care indică direcția în care se deplasează curentul prin rezistor. Valorile rezistenței sunt exprimate în ohmi (Ω).</p></h1>
+    </div>
+</div>
+<br><br>
+<div class="row">
+    <div class="column left" style="background-color:#aaa;">
+        <p>ceva</p>
+    </div>
+    <div class="column right" style="background-color:#aaa;">
+        <div id="calculator">
+            <h2>Calculator Rezistență</h2>
+            <label for="band1">Bandă 1:</label>
+            <select id="band1">
+                <option value="0">Negru</option>
+                <option value="1">Maro</option>
+                <option value="2">Roșu</option>
+                <option value="3">Portocaliu</option>
+                <option value="4">Galben</option>
+                <option value="5">Verde</option>
+                <option value="6">Albastru</option>
+                <option value="7">Mov</option>
+                <option value="8">Gri</option>
+                <option value="9">Alb</option>
+            </select>
+            <br>
+            <label for="band2">Bandă 2:</label>
+            <select id="band2">
+                <option value="0">Negru</option>
+                <option value="1">Maro</option>
+                <option value="2">Roșu</option>
+                <option value="3">Portocaliu</option>
+                <option value="4">Galben</option>
+                <option value="5">Verde</option>
+                <option value="6">Albastru</option>
+                <option value="7">Mov</option>
+                <option value="8">Gri</option>
+                <option value="9">Alb</option>
+            </select>
+            <br>
+            <label for="multiplier">Multiplier:</label>
+            <select id="multiplier">
+                <option value="0">Negru</option>
+                <option value="1">Maro</option>
+                <option value="2">Roșu</option>
+                <option value="3">Portocaliu</option>
+                <option value="4">Galben</option>
+                <option value="5">Verde</option>
+                <option value="6">Albastru</option>
+                <option value="7">Mov</option>
+                <option value="8">Gri</option>
+                <option value="9">Alb</option>
+            </select>
+            <br>
+            <label for="tolerance">Toleranță:</label>
+            <select id="tolerance">
+                <option value="±1%">maro</option>
+                <option value="±2%">rosu</option>
+                <option value="±0.5%">verde</option>
+                <option value="±5%">auriu</option>
+                <option value="±10%">argintiu</option>
+                <option value="±20%">niciuna</option>
+            </select>
+            <br><br>
+            <button onclick="calculateResistance()">Calculează</button>
+            <br><br>
+            <div id="result"></div>
+        </div>
+        <div id="calculator">
+            <h2>Calculator Culori Rezistență</h2>
+
+            <label>Introduceți valorile rezistenței:</label><br>
+            <input type="text" id="ohms" placeholder="Valoare rezistență (ohmi)">
+            <button onclick="calculCulori()">Calculează Culorile</button>
+            <br>
+            <p id="rezultat"></p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="stanga"><a href="youtube.com"><img src="yt.png"></a></div>
+    <div class="centru"><a href="youtube.com"><img src="fb.png"></a></div>
+    <div class="dreapta"><a href="https://www.instagram.com/silviu_24/"><img src="insta.png"></a></div>
+</footer>
+
+<script>
+    function calculateResistance() {
+        var band1 = document.getElementById('band1').value;
+        var band2 = document.getElementById('band2').value;
+        var multiplier = document.getElementById('multiplier').value;
+        var tolerance = document.getElementById('tolerance').value;
+
+        var resistance = (band1 * 10 + band2) * Math.pow(10, multiplier);
+
+        var result = "Valoare rezistență: " + resistance.toFixed(2) + "  ohmi <br> Toleranță: " + tolerance;
+        document.getElementById('result').innerHTML = result;
+    }
+
+    function calculCulori() {
+
+        var rezistenta = document.getElementById("ohms").value;
+        if (!isNaN(rezistenta) && rezistenta > 0) {
+            var culori = calculeazaCulori(rezistenta);
+            document.getElementById("rezultat").innerHTML = "Codul culorilor este: " + culori.join(" - ");
+        } else {
+            document.getElementById("rezultat").innerHTML = "Introduceți o valoare rezonabilă pentru rezistență.";
+        }
+    }
+
+    function calculeazaCulori(rezistenta) {
+        var culoriCifre = ["negru", "maro", "rosu", "portocaliu", "galben", "verde", "albastru", "violet", " gri", "alb"];
+        var cifre = rezistenta.toString().split("").map(Number);
+        var primaCifra = cifre[0];
+        var aDouaCifra = cifre[1];
+        var exponent = cifre.length - 2;
+        var culoare1 = culoriCifre[primaCifra];
+        var culoare2 = culoriCifre[aDouaCifra];
+        var culoare3 = culoriCifre[exponent];
+
+        return [culoare1, culoare2, culoare3];
+    }
+</script>
+
+</html>

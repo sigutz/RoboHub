@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RoboHUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="electricaCSS.css">
+    <script src="quiz.js"></script>
+    <script src="imgpopup.js"></script>
+    <script src="info.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <a href="index.html"><img src="logo.png" height="300px" id="logo"></a>
+    </header>
+    <p></p>
+    <ul class="nav">
+        <li id="lis"><a class="active" href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Lecții</a>
+            <div class="dropdown-content">
+                <a href="electrica.html">Electrică</a>
+                <a href="robotica.html">Robotică</a>
+                <a href="aparate.html">Instrumente</a>
+            </div>
+        </li>
+        <li id="lis"><a href="dictionar.html">Dicționar</a></li>
+        <li id="lis"><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <br>
+
+    <div class="prezentaregen">
+        <div class="prezentare1">
+            <h1>Electronică pentru începători</h1>
+            <hr>
+        </div>
+        <div class="prezentare2">
+            <h2>În cadrul secţiunii de electronică pentru începători vei găsi informaţii despre <br>curentul
+                electric,
+                componente electrice şi electronice, circuite electrice şi electronice<br> şi despre cam tot ceea ce
+                ţine de bazele electronicii.<br> Lista articolelor din categoria electronică pentru începători este
+                prezentată mai jos:</h2>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="body">
+        <button onclick="f1()">
+            <h2>Ce este un circuit electric ?</h2><img src="sageata-removebg-preview.png" width="10%">
+        </button>
+        <div id="div1">
+            <h3>Circuitele electrice sunt esențiale în domeniul robotică pentru că oferă calea prin care curentul<br>
+                electric poate circula, permițând funcționarea componentelor și sistemelor robotice. Acestea sunt<br>
+                formate dintr-o varietate de componente, precum baterii pentru a furniza sursa de energie,
+                conductoare<br>
+                pentru a permite fluxul de curent și dispozitive de control pentru a gestiona acest flux.
+                Înțelegerea<br>
+                modului în care aceste componente sunt conectate și interacționează într-un circuit este crucială
+                pentru<br>
+                a construi și a înțelege funcționarea roboților. Fără un circuit electric corect proiectat și<br>
+                implementat, un robot nu ar putea să funcționeze corespunzător.</h3>
+        </div>
+        <br><br><br>
+        <button onclick="f2()">
+            <h2>Capacitatea, inductanţa şi rezistenţa electrică</h2><img src="sageata-removebg-preview.png" width="10%">
+        </button>
+        <div id="div2">
+            <h2>Capacitatea electrică</h2>
+            <hr>
+            <h3>
+                Capacitatea electrică este o măsură a capacității unui sistem sau a unui element de a stoca sarcină<br>
+                electrică. Este determinată de raportul dintre sarcina electrică (adică cantitatea de sarcină
+                electrică)<br>
+                și tensiunea electrică (diferența de potențial electric) dintre cele două plăci ale unui
+                condensator.<br>
+                Unitatea de măsură a capacității este faradul (F). Capacitățile sunt utilizate într-o varietate de<br>
+                aplicații, inclusiv în filtrarea semnalului, în circuitul de pornire al motoarelor electrice și în<br>
+                stocarea de energie în sistemele de alimentare.<br>
+            </h3>
+            <h2>Inductanță electrică</h2>
+            <hr>
+            <h3>
+                Inductanța electrică este o măsură a capacității unui conductor spiralat sau a unei bobine de a induce
+                o<br>
+                tensiune într-un circuit electric atunci când curentul trece prin ea sau se schimbă. Este determinată
+                de<br>
+                geometria și caracteristicile materialelor inductorului. Inductanța este măsurată în henry (H).<br>
+                Inductanțele sunt utilizate într-o varietate de aplicații, cum ar fi în circuitele de filtrare a<br>
+                semnalului, în convertoarele de energie și în sistemele de comunicare fără fir.<br>
+            </h3>
+            <h2>Rezistența electrică</h2>
+            <hr>
+            <h3>
+                Rezistența electrică este măsura opoziției pe care un material o oferă fluxului de curent electric.
+                Este<br>
+                determinată de proprietățile materialelor și de geometria conductorului. Unitatea de măsură a<br>
+                rezistenței este ohmul (Ω). Rezistențele sunt utilizate într-o varietate de aplicații, inclusiv în<br>
+                limitarea curentului în circuite, în divizorii de tensiune și în calculatoare pentru măsurarea
+                tensiunii<br>
+                și a curentului. De asemenea, ele sunt utilizate în reglarea luminii și a vitezei motoarelor
+                electrice.<br>
+            </h3>
+        </div>
+        <br><br><br>
+        <button onclick="f3()">
+            <h2>Legarea in serie si paralel</h2><img src="sageata-removebg-preview.png" width="10%">
+        </button>
+        <div id="div3">
+            <h2>Legarea in serie</h2>
+            <hr>
+            <h3>
+                Legarea componentelor în serie este o modalitate de conectare a acestora într-un circuit electric în<br>
+                care componentele sunt conectate una după alta, astfel încât același curent trece prin fiecare<br>
+                componentă. Într-un circuit în serie, tensiunea se distribuie între componentele conectate în serie,
+                iar<br>
+                rezistența totală a circuitului este suma rezistențelor fiecărei componente. Această configurație
+                este<br>
+                utilizată atunci când dorim să adăugăm rezistențe sau alte componente pentru a obține o rezistență<br>
+                totală mai mare sau când dorim să împărțim tensiunea în mod egal între mai multe componente.<br>
+            </h3>
+            <h2>Legarea in paralel</h2>
+            <hr>
+            <h3>
+                Legarea componentelor în paralel este o modalitate de conectare a acestora într-un circuit electric
+                în<br>
+                care componentele sunt conectate astfel încât aceeași tensiune este aplicată la capetele fiecăreia,
+                dar<br>
+                curentul se împarte între ele. Într-un circuit în paralel, rezistența totală a circuitului este mai
+                mică<br>
+                decât cea mai mică rezistență a unei componente individuale, iar suma curentului care intră în nodul
+                de<br>
+                joncțiune este egală cu suma curentului care iese din acesta. Această configurație este folosită
+                atunci<br>
+                când dorim să obținem o rezistență totală mai mică sau când dorim să alimentăm mai multe componente
+                cu<br>
+                aceeași tensiune, dar cu curent diferit.
+            </h3>
+            <img id="myImg" src="serie-paralel.jpg" alt="serie-paralel">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <h3>
+                Legarea componentelor în serie și în paralel sunt două metode fundamentale de conectare a
+                componentelor<br>
+                în circuitele electrice și sunt utilizate într-o varietate de aplicații în robotică și alte domenii.<br>
+                Înțelegerea diferențelor și a avantajelor fiecărei configurații este importantă pentru proiectarea
+                și<br>
+                implementarea circuitelor electrice în sistemele robotice.<br>
+            </h3>
+        </div>
+        <br><br><br>
+        <button onclick="f4()">
+            <h2>Elemente electronice de bază</h2><img src="sageata-removebg-preview.png" width="10%">
+        </button>
+        <div id="div4">
+            <h3>
+                Componentele electronice precum rezistoarele, condensatoarele, bobinele, diodele și tranzistoarele
+                sunt<br>
+                esențiale în construirea circuitelor electrice și electronice. Aceste componente îndeplinesc diverse<br>
+                funcții, cum ar fi limitarea curentului, stocarea energiei, rectificarea semnalului și amplificarea<br>
+                semnalului, fiind vitale pentru funcționarea roboților. Înțelegerea funcționării și utilizării
+                acestor<br>
+                componente este esențială în proiectarea și construirea roboților, asigurându-se că aceștia își pot<br>
+                îndeplini sarcinile cu eficiență și fiabilitate.<br>
+            </h3>
+        </div>
+        <br><br><br>
+        <div class="quizz">
+            <h1>Quiz</h1>
+        </div>
+        <div class="rez">
+            <div class="question">
+                <p>1. În ce se măsoară capacitatea electrică?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> a) ohm</label>
+                    <label><input type="radio" name="q1" value="b"> b) farad</label>
+                    <label><input type="radio" name="q1" value="c"> c) henry</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. În ce se măsoară rezistența electrică?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> a) ohm</label>
+                    <label><input type="radio" name="q2" value="b"> b) farad</label>
+                    <label><input type="radio" name="q2" value="c"> c) henry</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. În ce se măsoară inductanța electrică?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> a) ohm</label>
+                    <label><input type="radio" name="q3" value="b"> b) farad</label>
+                    <label><input type="radio" name="q3" value="c"> c) henry</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. Care tip de legatura este ce-a mai importantă?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> a) niciuna</label>
+                    <label><input type="radio" name="q4" value="b"> b) serie</label>
+                    <label><input type="radio" name="q4" value="c"> c) paralel</label>
+                    <label><input type="radio" name="q4" value="d"> d) ambele</label>
+                    <label><input type="radio" name="q4" value="e"> e) alt tip</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. Care din urmatoarele componente sunt importante in robotica?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> a) niciuna</label>
+                    <label><input type="radio" name="q5" value="b"> b) condensatorii</label>
+                    <label><input type="radio" name="q5" value="c"> c) rezistorii</label>
+                    <label><input type="radio" name="q5" value="d"> d) bateriile</label>
+                    <label><input type="radio" name="q5" value="e"> e) toate</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>BONUS : Ti-a placut lectia?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> a) da</label>
+                    <label><input type="radio" name="q6" value="a"> b) nu</label>
+                    <label><input type="radio" name="q6" value="a"> c) poate</label>
+                </div>
+            </div>
+            <div class="butoane">
+                <button onclick="submitQuiz()">Verifică răspunsurile</button>
+                <button onclick="restartQuiz()">Restartează</button>
+                <div id="score-output"></div>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    <footer class="footer">
+        <div class="stanga"><a href="https://www.youtube.com/@inventeazaro" target="_blank"><img src="yt.png"></a></div>
+        <div class="centru"><a href="https://www.instagram.com/silviu_24/" target="_blank"><img src="insta.png"></a>
+        </div>
+        <div class="dreapta"><a href="https://web.facebook.com/ioansilviu.barcan" target="_blank"><img src="fb.png"></a>
+        </div>
+      </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>

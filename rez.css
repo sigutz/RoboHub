@@ -1,0 +1,27 @@
+#calculator {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    display: inline-block;
+  }
+  .left {
+    width: 72.99%;
+  }
+  
+  .right {
+    width: 25%;
+    margin-left: 10px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    padding: 10px;
+    height: 500px;
+  }
+  

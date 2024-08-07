@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RoboHUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="contactcss.css">
+</head>
+
+<body>
+    <header class="head">
+        <a href="index.html"><img src="logo.png" height="300px" id="logo"></a>
+    </header>
+    <p></p>
+    <ul class="nav">
+        <li id="lis"><a class="active" href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Lecții</a>
+            <div class="dropdown-content">
+                <a href="electrica.html">Electrică</a>
+                <a href="robotica.html">Robotică</a>
+                <a href="aparate.html">Instrumente</a>
+            </div>
+        </li>
+        <li id="lis"><a href="dictionar.html">Dicționar</a></li>
+        <li id="lis"><a href="contact.html">Contact</a></li>
+    </ul>
+    <br>
+<div class="text">
+    <div class="container">
+        <form action="php.php" method="post">
+           <h2>Contactează-ne</h2>
+          <label for="fname">Prenume</label>
+          <input type="text" id="fname" name="firstname" placeholder="Prenume">
+      
+          <label for="lname">Nume</label>
+          <input type="text" id="lname" name="lastname" placeholder="Nume">
+      
+          <label for="lname">email</label>
+          <input type="text" id="email" name="email" placeholder="nume@domeniu.com">
+
+          <label for="country">Tara</label>
+          <select id="country" name="country">
+            <option value="aromania">Romania</option>
+            <option value="moldova">Moldova</option>
+            <option value="diaspora">Alta tara</option>
+          </select>
+      
+          <label for="subject">Subiect  </label>
+          <textarea id="subject" name="subject" placeholder="Scrie-ne..." style="height:200px"></textarea>
+      
+          
+        </form>
+        <a href="contact.html"><Button class="Trimite" >Trimite</Button></a>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="stanga"><a href="https://www.youtube.com/@inventeazaro" target="_blank"><img src="yt.png"></a></div>
+        <div class="centru"><a href="https://www.instagram.com/silviu_24/" target="_blank"><img src="insta.png"></a>
+        </div>
+        <div class="dreapta"><a href="https://web.facebook.com/ioansilviu.barcan" target="_blank"><img src="fb.png"></a>
+        </div>
+      </footer>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

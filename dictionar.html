@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RoboHUB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="dictionarcss.css">
+</head>
+
+<body>
+  <header class="head">
+    <a href="index.html"><img src="logo.png" height="300px" id="logo"></a>
+</header>
+<p></p>
+<ul class="nav">
+    <li id="lis"><a class="active" href="index.html">Home</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Lecții</a>
+        <div class="dropdown-content">
+            <a href="electrica.html">Electrică</a>
+            <a href="robotica.html">Robotică</a>
+            <a href="aparate.html">Instrumente</a>
+        </div>
+    </li>
+    <li id="lis"><a href="dictionar.html">Dicționar</a></li>
+    <li id="lis"><a href="contact.html">Contact</a></li>
+</ul>
+    <div class="dictionar">
+        <br>
+        <h1>Dicționar Electronic și de Comunicații</h1>
+        <br>
+        <input type="text" id="myInput" onkeyup="cautare()" placeholder="Numele componentei..." title="nume">
+        <br>
+        <table class="tg" id="tabel">
+            <thead>
+              <tr>
+                <th class="tg-0pky"><h3>Componente electrice</h3></th>
+                <th class="tg-0pky"><h3>Descriere</h3></th>
+              </tr>
+            </thead>
+            <tbody>
+                <td class="tg-0pky">Amplificator audio</td>
+                <td class="tg-0pky">Amplificator destinat prelucrării semnalelor cu frecvențe în anumite limite.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Amplificator de curent</td>
+                <td class="tg-0pky">Amplificator în care intensitatea curentului electric din semnalul de ieșire este mai mare decât cea din semnalul de intrare.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Amplificator de putere</td>
+                <td class="tg-0pky">Amplificator conceput pentru a crește puterea semnalului de ieșire.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Amplificator de tensiune</td>
+                <td class="tg-0pky">Amplificator în care tensiunea electrică a semnalului de ieșire este mai mare decât tensiunea semnalului de intrare.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Bobină cu aer</td>
+                <td class="tg-0pky">Bobină electrică fără materiale feromagnetice în interior.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Bobină cu miez</td>
+                <td class="tg-0pky">Bobină electrică cu materiale feromagnetice în interior.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Capacitor</td>
+                <td class="tg-0pky">Dispozitiv electronic pasiv utilizat pentru stocarea și eliberarea energiei electrice sub formă de câmp electric.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Datasheet</td>
+                <td class="tg-0pky">Document care conține informații tehnice detaliate despre o componentă electrică sau electronică.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Diode (Diodă)</td>
+                <td class="tg-0pky">Dispozitive electronice cu două terminale care permit circulația curentului electric într-o singură direcție și împiedică circulația în direcția opusă.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Filtru Trece Bandă (FTB)</td>
+                <td class="tg-0pky">Dispozitiv electronic care permite trecerea semnalelor cu frecvențe situate într-un anumit interval și blochează cele în afara acestuia.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Filtru Trece Jos (FTJ)</td>
+                <td class="tg-0pky">Dispozitiv electronic care permite trecerea semnalelor cu frecvențe mai mici decât o frecvență prestabilită.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Filtru Trece Sus (FTS)</td>
+                <td class="tg-0pky">Dispozitiv electronic care permite trecerea semnalelor cu frecvențe mai mari decât o frecvență prestabilită.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Generatoare de Semnal</td>
+                <td class="tg-0pky">Dispozitiv electronic care generează semnale electrice periodice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Inductanță</td>
+                <td class="tg-0pky">Mărime fizică care caracterizează capacitatea unei bobine de a opune variațiilor de intensitate ale curentului electric care o străbate.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Resistor</td>
+                <td class="tg-0pky">Dispozitiv electronic pasiv, cu două terminale, care opune trecerii curentului electric prin el.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Tranzistor</td>
+                <td class="tg-0pky">Dispozitiv electronic cu trei terminale, care amplifică sau comută semnalele electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Amplificator operațional (Op-Amp)</td>
+                <td class="tg-0pky">Dispozitiv electronic cu un număr mare de aplicații în electronică, utilizat pentru amplificarea semnalelor.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Rezistență Electrică</td>
+                <td class="tg-0pky">Mărime fizică care caracterizează capacitatea unui material de a opune trecerii curentului electric prin el.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Adaptare de Impedanță</td>
+                <td class="tg-0pky">Practică prin care se urmărește egalitatea impedanțelor de ieșire și intrare între două echipamente.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Amper</td>
+                <td class="tg-0pky">Unitate de măsură a intensității curentului electric.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Volt</td>
+                <td class="tg-0pky">Unitate de măsură a tensiunii electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Ohm</td>
+                <td class="tg-0pky">Unitate de măsură a rezistenței electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Watt</td>
+                <td class="tg-0pky">Unitate de măsură a puterii electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Henry</td>
+                <td class="tg-0pky">Unitate de măsură a inductanței.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Farad</td>
+                <td class="tg-0pky">Unitate de măsură a capacității electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Hertz</td>
+                <td class="tg-0pky">Unitate de măsură a frecvenței.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Decibel</td>
+                <td class="tg-0pky">Unitate de măsură a intensității sonore sau a nivelului de semnal.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Tesla</td>
+                <td class="tg-0pky">Unitate de măsură a densității de flux magnetic.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Weber</td>
+                <td class="tg-0pky">Unitate de măsură a fluxului magnetic.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Joule</td>
+                <td class="tg-0pky">Unitate de măsură a energiei electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Coulomb</td>
+                <td class="tg-0pky">Unitate de măsură a sarcinii electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Bluetooth</td>
+                <td class="tg-0pky">Tehnologie de comunicație fără fir utilizată pentru transferul de date între dispozitive.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Ethernet</td>
+                <td class="tg-0pky">Standard de rețea de calculatoare care utilizează cabluri de cupru sau fibră optică pentru a transmite date.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">GPS (Global Positioning System)</td>
+                <td class="tg-0pky">Sistem de navigație și localizare bazat pe sateliți.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">GSM (Global System for Mobile Communications)</td>
+                <td class="tg-0pky">Standard de rețea celulară utilizat pentru comunicații mobile.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Wi-Fi</td>
+                <td class="tg-0pky">Tehnologie de rețea fără fir bazată pe standardele IEEE 802.11.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Radiofrecvență (RF)</td>
+                <td class="tg-0pky">Gama de frecvențe utilizate în comunicațiile radio și tehnologiile fără fir.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Antenă</td>
+                <td class="tg-0pky">Dispozitiv utilizat pentru transmiterea și recepția undelor radio sau a semnalelor wireless.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Comunicare Serială</td>
+                <td class="tg-0pky">Metodă de transmitere a datelor în care acestea sunt transmise un bit la un moment dat, pe un singur fir.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Comunicare Paralelă</td>
+                <td class="tg-0pky">Metodă de transmitere a datelor în care acestea sunt transmise simultan pe mai multe fire.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">USB (Universal Serial Bus)</td>
+                <td class="tg-0pky">Standard de interfață de conectare utilizat pentru transferul de date și alimentarea dispozitivelor electronice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">HDMI (High-Definition Multimedia Interface)</td>
+                <td class="tg-0pky">Interfață de conectare utilizată pentru transmiterea de semnale audio și video de înaltă definiție.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Fibră Optică</td>
+                <td class="tg-0pky">Mediul de transmisie care utilizează fire subțiri de sticlă sau plastic pentru a transmite date sub formă de lumină.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Voltmetru</td>
+                <td class="tg-0pky">Instrument de măsurare a tensiunii electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Ampermetru</td>
+                <td class="tg-0pky">Instrument de măsurare a intensității curentului electric.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Ohmmetru</td>
+                <td class="tg-0pky">Instrument de măsurare a rezistenței electrice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Osciloscop</td>
+                <td class="tg-0pky">Instrument de măsurare și analiză a semnalelor electrice în funcție de timp.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Generatoare de Semnal</td>
+                <td class="tg-0pky">Dispozitiv electronic care produce semnale electrice cu frecvențe și forme de undă specifice.</td>
+              </tr>
+              <tr>
+                <td class="tg-0pky">Multimetru</td>
+                <td class="tg-0pky">Instrument de măsurare electronic care poate măsura tensiunea, curentul și rezistența electrică.</td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <footer class="footer">
+      <div class="stanga"><a href="https://www.youtube.com/@inventeazaro" target="_blank"><img src="yt.png"></a></div>
+      <div class="centru"><a href="https://www.instagram.com/silviu_24/" target="_blank"><img src="insta.png"></a>
+      </div>
+      <div class="dreapta"><a href="https://web.facebook.com/ioansilviu.barcan" target="_blank"><img src="fb.png"></a>
+      </div>
+    </footer>
+    <script>
+        function cautare() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("tabel");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+        
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+#div1, #div2, #div3, #div4 {
+  padding: 10px;
+  text-align: center;
+  background-color: #00bdc7;
+  margin-top: 20px;
+  display: none;
+  transition: 1s;
+  border: #00ADB5;
+  border-radius: 10px;
+}
+
+.prezentaregen {
+  margin-inline: 10vw;
+}
+
+button {
+  transition: 0.3s;
+  color: white;
+  text-align: center;
+  padding: 0.6vw 18vw;
+  text-decoration: none;
+  background-color: #00ADB5;
+  border: 0;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.prezentare1 hr {
+  width: 29%;
+}
+
+.prezentare1 {
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+  padding: 20px 0;
+  vertical-align: middle;
+}
+
+.prezentare2 {
+  box-shadow: 0 0.6vw 0.6vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 0;
+}
+
+.body {
+  margin-left: 18%;
+  margin-right: 18%;
+
+}
+
+.body hr {
+  width: 20%;
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  z-index: 1300;
+}
+
+.close {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1202;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#score-output {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+label {
+  cursor: pointer;
+}
+
+.rez {
+  padding: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.quizz {
+  padding: 20px 0;
+  color: #00bdc7;
+  background-color: #1A1A2E;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+}
+
+.question {
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  margin-left: 0.4vw;
+}
+
+.butoane button {
+  border-radius: 0;
+  padding-inline: 10vw;
+  display: inline-flex;
+}

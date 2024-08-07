@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+  <title>RoboHUB</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="general.css">
+  <link rel="stylesheet" type="text/css" href="roboticacss.css">
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+</head>
+
+<body>
+  <header class="head">
+    <a href="index.html"><img src="logo.png" height="300px" id="logo"></a>
+</header>
+<p></p>
+<ul class="nav">
+    <li id="lis"><a class="active" href="index.html">Home</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Lecții</a>
+        <div class="dropdown-content">
+            <a href="electrica.html">Electrică</a>
+            <a href="robotica.html">Robotică</a>
+            <a href="aparate.html">Instrumente</a>
+        </div>
+    </li>
+    <li id="lis"><a href="dictionar.html">Dicționar</a></li>
+    <li id="lis"><a href="contact.html">Contact</a></li>
+</ul>
+  <br><br><br>
+  <div class="container">
+    <iframe id="player" src="" frameborder="0" allowfullscreen></iframe>
+    <div>
+      <button onclick="previousVideo()">Înapoi</button>
+      <button onclick="nextVideo()">Înainte</button>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <script>
+    var videos = [
+      '508zF6FnVjs', 
+      'So1yulRsFCo', 
+      'jFNp6ANK5K0', 
+      'wADHvtsF64E', 
+      'tX_yoWMZ-ys', 
+      'inkDiAoTdyM', 
+      'lMJGbACNzI0', 
+      'uIlDAWi1Eoc',  
+      'qx8d43tQRyI', 
+      'rpWNHQ0l1wU', 
+      'KTkd6_SZAVU',  
+      '5mwUS5d3OsA', 
+      'uqvq3gaWSFs', 
+      '77eH8ZrJgUc',  
+      '4H79kX8EDbQ',
+      'wIIZwszqAlc',  
+      'j-4qHa85pag', 
+      'CMnfzs9GaO0', 
+      'GGHgXpJFZTo',  
+      'wb95Kpz79Mo', 
+      'VkMJMt-SB1Q', 
+      'IUmtt-XcZoE', 
+      'A_zW4jnNvaA',  
+      'Im2t7SQcmZ4', 
+      '0OvAvKiE_Wk', 
+      'LSM4KaUQs6k', 
+      'ouij4eKn-CU', 
+      'V511wJyoU5M', 
+      '-6q_6E9AOMI', 
+      'm3wa-YNXlIs', 
+      'w60DPXNIsc4',  
+      'aAKH8O0i2bY', 
+      'qUSvTW_Hnug', 
+      'BQyoETIKuLI', 
+      '8Antw3GRPlQ', 
+      'R1GzUCcy8Cc', 
+      '_xNvFe7nCMU', 
+      '_tJ13FgC0jE', 
+      '7vDtMknxHmg', 
+      'ECwPVJ7aX3w', 
+      'Dn20cZM1gr0', 
+      'VkluNri2Sos', 
+      'xfMmpZpYWEo', 
+      'Nxr1L0be4Ag', 
+      '30u03zj3c1k', 
+      'bGAl0OLGKgg', 
+      'p6wPOpTHROw', 
+      'N7Is0xH-FRI', 
+      'an7HInWZjfg', 
+      'ncLnn5nCBNI', 
+    ]; 
+
+    var currentIndex = 0;
+    var player = document.getElementById('player');
+
+    function loadVideo() {
+      player.src = 'https://www.youtube.com/embed/' + videos[currentIndex];
+    }
+
+    function nextVideo() {
+      currentIndex = (currentIndex + 1) % videos.length;
+      loadVideo();
+    }
+
+    function previousVideo() {
+      currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+      loadVideo();
+    }
+
+    window.onload = loadVideo;
+  </script>
+
+
+  <footer class="footer">
+    <div class="stanga"><a href="https://www.youtube.com/@inventeazaro" target="_blank"><img src="yt.png"></a></div>
+    <div class="centru"><a href="https://www.instagram.com/silviu_24/" target="_blank"><img src="insta.png"></a>
+    </div>
+    <div class="dreapta"><a href="https://web.facebook.com/ioansilviu.barcan" target="_blank"><img src="fb.png"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

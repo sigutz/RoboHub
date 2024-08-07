@@ -1,0 +1,144 @@
+.prezentare .card {
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 32.5%;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  margin-left: 0.4vw;
+}
+
+.prezentare .container {
+  gap: 5vw;
+}
+
+.prezentare hr {
+  width: 33%;
+}
+.prezentare .card:hover hr {
+  width: 50%;
+  transition: 0.3s;
+}
+.electro hr {
+  width: 33%;
+}
+
+
+.electro .card:hover hr {
+  width: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#robohub {
+  background-color:#00ADB5 ;
+  border-radius: 10px;
+}
+
+.electro .card {
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 32.4%;
+  text-align: center;
+  display: inline-block;
+  padding: 4rem 1rem;
+  vertical-align: middle;
+  margin-inline: 0.36vw;
+}
+.piese hr {
+  width: 50%;
+}
+.electro img {
+  width: 200px;
+}
+.piese .card:hover hr,
+img {
+  width: 80%;
+  transition: 0.3s;
+}
+
+.piese img  {
+  width: 50%;
+}
+.piese .cardT {
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  background-color: #00ADB5;
+  padding-left: 2vw;
+  padding-top: 1vw;
+}
+.electro .cardT {
+  box-shadow: 0 0.4vw 0.4vw 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  background-color: #00ADB5;
+  padding-left: 2vw;
+  padding-top: 1vw;
+}
+
+.piese a,
+.electro a {
+  color: aliceblue;
+}
+.img:hover .overlay {
+  opacity: 1;
+}
+
+.img {
+  position: relative;
+}
+.piese .card:hover , .electro .card:hover , .prezentare .card:hover{
+    transform: scale(1.05);
+    z-index: 2 ;
+}
+.electro .card:hover {
+  cursor: pointer;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 15.9%;
+  height: 280px;
+  perspective: 1000px;
+  margin-left: 0.43vw;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.piese .card
+{
+  display: inline-block;
+}
